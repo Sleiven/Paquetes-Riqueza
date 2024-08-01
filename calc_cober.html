@@ -1913,20 +1913,14 @@ margin-bottom: 17px;
 <h1>Comandos relacionados con el cálculo de la cobertura</h1>
 <p>Después de haber hecho la revisión de los 15 paquetes, a continuación se listan los comandos relacionados con esta temática y el paquete al que pertenecen.</p>
 <pre class="badCode"><code># A tibble: 6 × 4
-							 
   comando     categoria otros paquetes 
   &lt;chr&gt;       &lt;chr&gt;     &lt;chr&gt; &lt;chr&gt;    
 1 coverage    C2        &lt;NA&gt;  BAT      
-																  
 2 Coverage    C2        C1    entropart
-  
 3 depth_cov   C2        D1    hilldiv  
-  
 4 DataInfo    C2        &lt;NA&gt;  iNEXT    
 5 Diversity   C2        D1    SpadeR   
 6 ChaoSpecies D1        C2    SpadeR   </code></pre>
-
-
 <div id="carga-de-las-librerías-respectivas" class="section level2">
 <h2>Carga de las librerías respectivas</h2>
 <pre class="r prevCode"><code># Librerias y funciones
@@ -1993,7 +1987,6 @@ ensamblaje_unif[, 1:6]
 
 # 1b. Ajustar tabla a familias x sitio
 artropodos &lt;- ensamblaje_unif[,-1] %&gt;% t() 
-
 colnames(artropodos) &lt;- ensamblaje_unif$sitio
 
 # Muestra de la tabla final
