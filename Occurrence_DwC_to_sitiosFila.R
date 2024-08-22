@@ -21,7 +21,7 @@ library(httr)
 
 # 3. Importar el archivo con las ocurrencias desde github ----
 urlfile <- "https://raw.githubusercontent.com/Sleiven/Paquetes-Riqueza/main/Ramirez_etal_2023_Artropodos_v1.4/occurrence.txt"
-token <- "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"
+token <- "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"
 
 accessURL <- GET(urlfile, add_headers(Authorization = paste("token", token)))
 crudo <- content(accessURL, as = "text")
